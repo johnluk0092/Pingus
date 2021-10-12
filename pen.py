@@ -5,9 +5,21 @@ import pickle
 from PIL import Image
 from sklearn.ensemble import RandomForestClassifier
 
+# Change Page Icon and Page Title
 img = Image.open('Penguin.jpg')
 st.set_page_config(page_title='Penguin Classifier', page_icon = img)
 
+# Hide Setting Menu and Footer
+hide_menu_style = """
+		<style>
+		#MainMenu {visibility: hidden; }
+		footer {visibility: hidden; }
+		<style>
+		"""
+
+st.markdown(hide_menu_style, unsafe_allow_html = True)
+
+# Write Tittle
 st.write("""
 # Penguin Prediction App
 This app predicts the **Palmer Penguin** species!
