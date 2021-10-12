@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from PIL import Image
 from sklearn.ensemble import RandomForestClassifier
 
 img = Image.open('Penguin.jpg')
