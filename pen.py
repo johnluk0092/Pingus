@@ -4,6 +4,9 @@ import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
 
+img = Image.open('Penguin.jpg')
+st.set_page_config(page_title='Penguin Classifier', page_icon = img)
+
 st.write("""
 # Penguin Prediction App
 This app predicts the **Palmer Penguin** species!
